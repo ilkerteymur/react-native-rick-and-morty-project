@@ -5,6 +5,7 @@ const screenWrapper = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: AppColors.BLACK,
+    padding: 5,
   },
   headerStyle: {
     backgroundColor: AppColors.BLACK,

@@ -39,9 +39,10 @@ const Characters = () => {
         </View>
       ) : (
         <FlatList
+          numColumns={2}
           data={characters}
-          renderItem={({item}) => <CharactersCard item={item}/>}
-          keyExtractor={item => item.id}
+          renderItem={({item}) => <CharactersCard item={item} />}
+          keyExtractor={item => '_' + item.id}
         />
       )}
     </View>
